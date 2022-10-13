@@ -31,12 +31,14 @@ export default function List({ countrtList, updatedList }) {
 
   return (
     <>
-      <ul>
+      <ul className="card country-list">
         {noResult
           ? noResult
           : listResult &&
             listResult.map((item, index) => (
-              <li key={item + index}>{item}</li>
+              <li className="pa-10" key={item + index}>
+                {item}
+              </li>
             ))}{" "}
       </ul>
     </>
